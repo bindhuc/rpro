@@ -166,6 +166,7 @@ const LatestArticles = () => {
               </div>
                   )
                 }
+                return null;
               }
               
             
@@ -192,6 +193,7 @@ const LatestArticles = () => {
               </div>
                   )
                 }
+                return null;
               }
               
             
@@ -216,8 +218,11 @@ const LatestArticles = () => {
               </div>
               </div>
               </div>
+              
                   )
+                  
                 }
+                return null;
               }
               
             
@@ -244,6 +249,7 @@ const LatestArticles = () => {
               </div>
                   )
                 }
+                return null;
               }
               
             
@@ -270,6 +276,7 @@ const LatestArticles = () => {
               </div>
                   )
                 }
+                return null;
               }
               
             

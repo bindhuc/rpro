@@ -39,7 +39,9 @@ const SomeRelated = () => {
                <div className='latest-related'>
                   {
                       Tourist.filter(data=>data.id==="2").map((latest)=>(
-                         <>
+                        
+                            <>
+                         
                               <div >
                              <Link to={`/Tourism/${latest.id}`}> <img className='try-image' src={latest.image} alt="" /></Link>
                               </div>
