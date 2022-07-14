@@ -8,15 +8,17 @@ const DataComponent = () => {
   const{id}=useParams();
   const{value1,}=useContext(TourContext);
   const[Tourist]=value1;
-  const{value2,}=useContext(TourContext);
-  const[Hollywood]=value2;
+  // const{value2,}=useContext(TourContext);
+  // const[Fitness]=value2;
   const{value3,}=useContext(TourContext);
   const[Technology]=value3;
   
-  const{value4,}=useContext(TourContext);
+const{value4,}=useContext(TourContext);
   const[Bollywood]=value4;
   const{value5,}=useContext(TourContext);
   const[Food]=value5;
+  const{value6,} =useContext(TourContext);
+  const[Hollywood]=value6
 
   const[data,setdata]=useState({
     image:"",
@@ -41,20 +43,20 @@ const DataComponent = () => {
    });
   })
 
-  useEffect(()=>{
-    Hollywood.forEach((view) => {
-      if(view.id===id){
-        // console.log("data-matched");
-        setdata({
-          image:view.image,
-          name:view.name,
-          info:view.info,
-          date:view.date,
-          description:view.description,
-        })
-      }
-    });
-   })
+  // useEffect(()=>{
+  //   Fitness.forEach((view) => {
+  //     if(view.id===id){
+  //       // console.log("data-matched");
+  //       setdata({
+  //         image:view.image,
+  //         name:view.name,
+  //         info:view.info,
+  //         date:view.date,
+  //         description:view.description,
+  //       })
+  //     }
+  //   });
+  //  })
    useEffect(()=>{
     Food.forEach((view) => {
       if(view.id===id){
@@ -85,6 +87,20 @@ const DataComponent = () => {
    })
    useEffect(()=>{
     Bollywood.forEach((view) => {
+        if(view.id===id){
+          // console.log("data-matched");
+          setdata({
+            image:view.image,
+            name:view.name,
+            info:view.info,
+            date:view.date,
+            description:view.description,
+          })
+        }
+      });
+     })
+     useEffect(()=>{
+      Hollywood.forEach((view) => {
         if(view.id===id){
           // console.log("data-matched");
           setdata({

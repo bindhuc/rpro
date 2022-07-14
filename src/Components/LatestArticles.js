@@ -3,9 +3,9 @@ import { TourContext } from './TourContext'
 import { Link } from 'react-router-dom'
 
 const LatestArticles = () => {
-    const {value1,value2,value3,value4,value5} = useContext(TourContext)
+    const {value1,value6,value3,value4,value5} = useContext(TourContext)
     const[Tourist]=value1;
-    const[Hollywood]=value2;
+    const[Hollywood]=value6;
     const[Technology]=value3;
     const[Bollywood]=value4;
     const[Food]=value5;
@@ -147,7 +147,7 @@ const LatestArticles = () => {
            <div className='toppost-border'></div>
            </div>
             {
-              Tourist.map( (tourisms,index) =>{
+              Tourist.map( (tourisms,index) => {
                 if(index >= Tourist.length-1){
                   return(
            <div className='design1'>
@@ -166,7 +166,6 @@ const LatestArticles = () => {
               </div>
                   )
                 }
-                return null;
               }
               
             
@@ -193,7 +192,6 @@ const LatestArticles = () => {
               </div>
                   )
                 }
-                return null;
               }
               
             
@@ -218,11 +216,8 @@ const LatestArticles = () => {
               </div>
               </div>
               </div>
-              
                   )
-                  
                 }
-                return null;
               }
               
             
@@ -249,7 +244,6 @@ const LatestArticles = () => {
               </div>
                   )
                 }
-                return null;
               }
               
             
@@ -276,7 +270,6 @@ const LatestArticles = () => {
               </div>
                   )
                 }
-                return null;
               }
               
             

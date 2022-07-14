@@ -3,9 +3,9 @@ import { TourContext } from './TourContext'
 import { Link } from 'react-router-dom'
 
 const SomeRelated = () => {
-    const{value1,value2,value3}=useContext(TourContext)
+    const{value1,value6,value3}=useContext(TourContext)
     const[Technology]=value3;
-    const[Hollywood]=value2;
+    const[Hollywood]=value6;
     const[Tourist]=value1;
   return (
     <div>

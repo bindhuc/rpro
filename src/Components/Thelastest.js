@@ -3,9 +3,9 @@ import { TourContext } from './TourContext'
 import { Link } from 'react-router-dom'
 
 const Thelastest = () => {
-    const{value2,value4,value5}=useContext(TourContext)
+    const{value6,value4,value5}=useContext(TourContext)
     const[Food]=value5;
-    const[Hollywood]=value2;
+    const[Hollywood]=value6;
     const[Bollywood]=value4;
     
   return (

@@ -37,41 +37,7 @@ const TourDetails = (props) =>{
        description:"Srinagar, the summer capital of Jammu and Kashmir is located in the heart of the Kashmir valley at an altitude of 1,730 m above sea level. Spread on both sides of the river Jhelum the city is famous for its natural beauty, gardens, waterfronts and houseboats. Srinagar is called the city of lakes and the Venice of the East, fascinating tourists from centuries with its beautiful picturesque Himalayan backdrop, glittering lakes that are surrounded by houseboats and Shikaras and the majesty of Mughal architecture" } ,
     ]);
 
-    let [Hollywood,setFitness]=useState([
-        
-        {
-            id:"5",
-          image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMbPJ7kSA2dGTqjMnk2cjOSfrIUjL6SYyvhg&usqp=CAU" ,
-          name:"Spider-Man: No Way Home" ,
-          info:"It is the sequel to Spider-Man: Homecoming (2017) and Spider-Man: Far From Home (2019), and the 27th film in the Marvel Cinematic Universe (MCU).",
-          date:"Hollywood/ March 2022",
-       description:"After Quentin Beck frames Peter Parker for murder and reveals his identity as Spider-Man, Parker, his girlfriend MJ, best friend Ned Leeds, and aunt May are interrogated by the Department of Damage Control.  After Parker, MJ, and Ned's MIT applications are rejected.  ",
-        },
-        {
-            id:"6",
-          image:"https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/The_Batman_%28film%29_poster.jpg/220px-The_Batman_%28film%29_poster.jpg",
-          name:"The Batman",
-          info:"Batman is a superhero appearing in American comic books published by DC Comics. The character was created by artist Bob Kane and writer Bill Finge",
-          date:"Hollywood/March 2022",
-       description:"The Batman is a 2022 American superhero film based on the DC Comics character Batman. Produced by DC Films, 6th & Idaho, and Dylan Clark Productions, and distributed by Warner Bros. Pictures, it is a reboot of the Batman film franchise. The film was directed by Matt Reeves, who wrote the screenplay with Peter Craig. ",
-        },
-        {
-            id:"7",
-            image:"https://upload.wikimedia.org/wikipedia/en/thumb/1/13/Bullet_Train_%28poster%29.jpeg/220px-Bullet_Train_%28poster%29.jpeg",
-            name:"Bullet Train",
-            info:"Bullet Train is an upcoming action comedy film directed by David Leitch, from a screenplay by Zak Olkewicz. The film is based on the Japanese novel Maria Beetle",
-            date:"Hollywood/March 2022",
-         description:"Trained killer Ladybug wants to give up the life but is pulled back in by his handler Maria Beetle in order to collect a briefcase on a bullet train heading from Tokyo to Morioka. Once onboard, he and the other competing assassins onboard discover that their objectives are all connected",
-        },
-        {
-            id:"8",
-            image:"https://upload.wikimedia.org/wikipedia/en/thumb/9/9e/Turning_Red_poster.jpg/220px-Turning_Red_poster.jpg",
-            name:"Turning Red",
-            info:"Turning Red is a 2022 American animated coming-of-age fantasy comedy film produced by Pixar Animation Studios and distributed by Walt Disney Studios Motion Pictures",
-            date:"Hollywood/ March 2022",
-        description:"In 2002, Meilin Mei Lee is a 13-year-old Chinese-Canadian girl living in Toronto. Mei helps take care of the Lee family's temple dedicated to their ancestor, Sun Yee, and works to make her strict, overprotective mother, Ming Lee, proud. She tries to hide her personal interests from Ming.",
-           },
-    ])
+    
     let [Technology,setTechnology] = useState([
         {
             id:"9",
@@ -178,16 +144,51 @@ const TourDetails = (props) =>{
             description:"Doughnuts are usually deep fried from a flour dough, but other types of batters can also be used. Various toppings and flavorings are used for different types, such as sugar, chocolate or maple glazing. Doughnuts may also include water, leavening, eggs, milk, sugar, oil, shortening, and natural or artificial flavors. ",
          },
     ])
+    let [Hollywood,setHollywood]=useState([
+        {
+            id:"17",
+           image:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Fruktsallad_%28Fruit_salad%29.jpg/250px-Fruktsallad_%28Fruit_salad%29.jpg" ,
+           name:"Fruit salad",
+           info:"Fruit salad is a dish consisting of various kinds of fruit, sometimes served in a liquid, either their own juices or a syrup.",
+           date:"Food/March 2022",
+           description:"There are many types of fruit salad, ranging from the basic (no nuts, marshmallows, or dressing) to the moderately sweet (Waldorf salad) to the sweet (ambrosia salad). Another salad containing fruit is a jello salad, with its many variations.",
+        },
+        {
+            id:"18",
+            image:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fattoush_mixed-salad.jpg/250px-Fattoush_mixed-salad.jpg" ,
+            name:"Fattoush",
+            info:"Fattoush is a Levantine salad made from toasted  (Arabic flat bread) combined with mixed greens and other vegetables, such as radishes and tomatoes.",
+            date:"Food/March 2022",
+            description:"Fattush belongs to the family of dishes known as fattat (plural of fatteh), which use stale flatbread as a base. Fattoush includes vegetables and herbs varying by season and taste. The vegetables are cut into relatively large pieces compared to tabbouleh which requires ingredients to be finely chopped",
+         },
+         {
+             id:"19",
+            image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Pudim_Abade_de_Priscos.png/220px-Pudim_Abade_de_Priscos.png" ,
+            name:"Pudding",
+            info:"Pudding is a type of food that can be either a dessert or a savoury (salty or spicy) dish that is part of the main meal.",
+            description:"In North America, pudding characteristically denotes a sweet, milk-based dessert similar in consistency to egg-based custards, instant custards or a mousse, often commercially set using cornstarch, gelatin or similar coagulating agent such as Jell-O.",
+         },
+         {
+             id:"20",
+            image:"https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Glazed-Donut.jpg/220px-Glazed-Donut.jpg" ,
+            name:"Doughnut",
+            info:"A doughnut or donut is a type of food made from leavened fried dough.",
+            date:"Food/March 2022",
+            description:"Doughnuts are usually deep fried from a flour dough, but other types of batters can also be used. Various toppings and flavorings are used for different types, such as sugar, chocolate or maple glazing. Doughnuts may also include water, leavening, eggs, milk, sugar, oil, shortening, and natural or artificial flavors. ",
+         },
+    ])
 
 console.log("foodsa")
 return (
     <TourContext.Provider  value={{value1:[Tourist,setTourist],
-                                   value2:[Hollywood,setFitness],
+                                
                                    value3:[Technology,setTechnology],
                                    value4:[Bollywood,setBollywood],
-                                   value5:[Food,setFood]}} >
+                                   value5:[Food,setFood],
+                                   value6:[Hollywood,setHollywood]}} >
     {props.children}
     </TourContext.Provider>
 )
 }
+
 export default TourDetails
